@@ -10,7 +10,7 @@ RUN chown lofarsun /home/lofarsun
 RUN echo "export PATH=/opt/conda/bin:$PATH" >> /home/lofarsun/.bashrc
 WORKDIR /home/lofarsun
 
-COPY ./TestFile /home/lofarsun
+#COPY ./TestFile /home/lofarsun
 
 # setup LOFAR sun
 RUN cd /home/lofarsun &&\
