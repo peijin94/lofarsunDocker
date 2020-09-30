@@ -1,1 +1,1 @@
-docker build . --file Dockerfile
+docker build . --file Dockerfile -t peijin/lofarsun:latest

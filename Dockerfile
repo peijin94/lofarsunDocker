@@ -18,7 +18,7 @@ RUN cd /home/lofarsun &&\
 	git clone https://git.astron.nl/ssw-ksp/lofar-sun-tools.git &&\
 	cd /home/lofarsun/lofar-sun-tools/pro/src &&\
 	python setup.py install &&\
-	cp /home/lofarsun/lofar-sun-tools/pro/*.py /home/lofarsun/
+	cp -r /home/lofarsun/lofar-sun-tools/pro /home/lofarsun/
 
 # Get a Shell
 CMD /bin/bash -c "su lofarsun"
