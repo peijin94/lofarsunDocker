@@ -1,7 +1,7 @@
 FROM continuumio/anaconda3
 MAINTAINER "Peijin Zhang"
 # Install SunPy
-RUN conda install -c conda-forge sunpy>2.0.0 matplotlib jupyterlab scikit-image scipy astropy opencv pyqt
+RUN conda install -c conda-forge sunpy>2.0.0 matplotlib jupyterlab scikit-image scipy astropy opencv #pyqt
   
 # Add a user # install essential package
 RUN useradd -m -s /bin/bash lofarsun && apt-get -y install wsclean libgl1-mesa-glx 
