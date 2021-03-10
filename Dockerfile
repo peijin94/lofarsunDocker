@@ -13,7 +13,8 @@ RUN useradd -m -s /bin/bash lofarsun &&\
 	 apt-get update &&\
          apt-get -y install libgl1-mesa-glx --no-install-recommends &&\
          rm -rf /var/lib/apt/lists/* &&\
-         echo "export PATH=/opt/conda/bin:$PATH" >> /home/lofarsun/.bashrc
+         echo "export PATH=/opt/conda/bin:$PATH" >> /home/lofarsun/.bashrc &&\
+	 echo "conda activate lofarsun"
 WORKDIR /home/lofarsun
 
 #RUN apt-get -y install wsclean libgl1-mesa-glx
