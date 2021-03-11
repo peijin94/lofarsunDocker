@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3:latest
+FROM continuumio/anaconda:2020.11
 # MAINTAINER "Peijin Zhang"
 # Install SunPy
 ADD ./env.yml /tmp/env.yml
