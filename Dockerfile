@@ -22,8 +22,8 @@ WORKDIR /home/lofarsun
 
 # setup LOFAR sun
 RUN cd /home/lofarsun &&\
-        git clone https://github.com/Pjer-zhang/lofarsunDocker.git &&\
         git clone https://git.astron.nl/ssw-ksp/lofar-sun-tools.git &&\
+        git clone https://github.com/Pjer-zhang/lofarsunDocker.git &&\
         cd /home/lofarsun/lofar-sun-tools/pro/src &&\
         python setup.py install &&\
         cp -r /home/lofarsun/lofar-sun-tools/pro /home/lofarsun/
