@@ -16,6 +16,6 @@ Then run the docker image and start the jupyter server.
 source run_docker.sh
 ```
 
-[https://github.com/Pjer-zhang/lofarsunDocker]
+[lofarsunDocker](https://github.com/Pjer-zhang/lofarsunDocker)
 
 It will start a jupyter-lab at port:8998, use a broswer to start using the modules at myServerAddress:8998
