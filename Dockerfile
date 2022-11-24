@@ -17,7 +17,8 @@ RUN useradd -m -s /bin/bash lofarsun &&\
 	 echo "conda activate lofarsun"
 WORKDIR /home/lofarsun
 
-#RUN apt-get -y install wsclean libgl1-mesa-glx
+RUN apt update && apt upgrade -y
+RUN apt-get -y install wsclean-dev
 #RUN chmod -R a+rwx /opt/conda &&
 
 # setup LOFAR sun
