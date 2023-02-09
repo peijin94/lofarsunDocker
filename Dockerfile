@@ -17,16 +17,14 @@ RUN useradd -m -s /bin/bash lofarsun &&\
 	 echo "conda activate lofarsun"
 WORKDIR /home/lofarsun
 
-RUN apt update && apt upgrade -y
-RUN apt-get -y install wsclean-dev
 #RUN chmod -R a+rwx /opt/conda &&
 
 # setup LOFAR sun
-RUN cd /home/lofarsun &&\
+RUN cd /home/lofarsun  &&\
         git clone https://git.astron.nl/ssw-ksp/lofar-sun-tools.git &&\
-        git clone https://github.com/Pjer-zhang/lofarsunDocker.git &&\
+        git clone https://github.com/peijin94/lofarsunDocker.git &&\
         cd /home/lofarsun/lofar-sun-tools/ &&\
-        python setup.py install 
+        python -m pip install . 
 #&&\
 #   cp -r /home/lofarsun/lofar-sun-tools/pro /home/lofarsun/
 
