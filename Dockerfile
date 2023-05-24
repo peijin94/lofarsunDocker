@@ -20,11 +20,13 @@ WORKDIR /home/lofarsun
 #RUN chmod -R a+rwx /opt/conda &&
 
 # setup LOFAR sun
+
 RUN cd /home/lofarsun  &&\
         git clone https://git.astron.nl/ssw-ksp/lofar-sun-tools.git &&\
         git clone https://github.com/peijin94/lofarsunDocker.git &&\
         cd /home/lofarsun/lofar-sun-tools/ &&\
-        python -m pip install . 
+        python -m pip install .  
+
 #&&\
 #   cp -r /home/lofarsun/lofar-sun-tools/pro /home/lofarsun/
 
