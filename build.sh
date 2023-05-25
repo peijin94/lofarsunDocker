@@ -1,1 +1,1 @@
-docker build . --file Dockerfile -t peijin/lofarsun:latest
+docker build . --file Pure.Dockerfile -t peijin/lofarsun:latest
