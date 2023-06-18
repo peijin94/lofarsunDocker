@@ -8,10 +8,10 @@ RUN useradd -m -s /bin/bash lofarsun &&\
 # setup LOFAR sun
 RUN cd /home/lofarsun &&\
 	python -m pip install jupyterlab jupyterlab-lsp h5py &&\
-	python -m pip install torch==2.0.1+cpu -f https://download.pytorch.org/whl/torch_stable.html &&\
-        git clone https://github.com/peijin94/LOFAR-Sun-tools.git &&\
-        git clone https://github.com/peijin94/lofarsunDocker.git &&\
-        cd /home/lofarsun/LOFAR-Sun-tools/ &&\
-        python -m pip install .
+	python -m pip install torch==2.0.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+RUN python -m pip install python-casacore &&\
+        python -m pip install git+https://github.com/peijin94/LOFAR-Sun-tools &&\
+	python -m pip install git+https://github.com/peijin94/SEMP &&\
+	python -m pip install cdflib	
 
 CMD /bin/bash -c "su lofarsun"
