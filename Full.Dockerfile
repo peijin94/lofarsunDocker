@@ -12,6 +12,6 @@ RUN cd /home/lofarsun &&\
 RUN python -m pip install python-casacore &&\
         python -m pip install git+https://github.com/peijin94/LOFAR-Sun-tools &&\
 	python -m pip install git+https://github.com/peijin94/SEMP &&\
-	python -m pip install cdflib pyswarms	
+	python -m pip install cdflib pyspedas astropy scipy astrospice bs4 pfsspy pyswarms	
 
 CMD /bin/bash -c "su lofarsun"
